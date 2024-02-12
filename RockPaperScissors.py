@@ -3,7 +3,6 @@ import os
 liste = ["Rock", "Paper", "Scissors"]
 
 while True :
-    os.system("cls")
     user_input = input("Rock , Paper , Scissors ? :")
     computer = random.choice(liste)
     if user_input in liste:
@@ -39,4 +38,5 @@ while True :
             else:
                 break
     else:
+        os.system("cls")
         print("Invalid option")
